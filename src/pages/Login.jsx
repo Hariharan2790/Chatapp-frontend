@@ -60,6 +60,9 @@ export default function Login() {
       }
     }
   };
+  function userCredentials(){
+    setValues({ username: "admin", password: "admin123" })
+  }
 
   return (
     <>
@@ -86,6 +89,9 @@ export default function Login() {
           <span>
             Don't have an account ? <Link to="/register">Create One.</Link>
           </span>
+          <button onClick={userCredentials}>
+                User Credentials
+              </button>
         </form>
       </FormContainer>
       <ToastContainer />
